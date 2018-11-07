@@ -12,11 +12,12 @@ import (
 //export go_reverse
 func go_reverse(val C.VALUE) C.VALUE {
 	valLength := C.rb_array_len(val)
-	valLengthInt := int(valLength)
 
 	if valLength == 0 {
 		return C.rb_ary_new()
 	}
+
+	valLengthInt := int(valLength)
 
 	var elements []C.VALUE
 	sliceHeader := (*reflect.SliceHeader)((unsafe.Pointer(&elements)))
