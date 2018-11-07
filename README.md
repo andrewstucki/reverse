@@ -4,10 +4,17 @@ This is a horrible idea, don't ever do it. That said, get:
 
 1) GNU Make
 2) A functional Go compiler
-3) Ruby
-4) GCC
-5) A Mac (due to the use of `-Wl,-undefined,dynamic_lookup`)
+3) GCC
+4) Ruby
+5) Bundler
 
 ```
-make && make test
+bundle install && make && make test
+```
+
+## Docker
+
+```
+docker build . -t go_reverse
+docker run --rm go_reverse
 ```

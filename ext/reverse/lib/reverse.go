@@ -1,7 +1,6 @@
 // package name: reverse
 package main
 
-// #cgo LDFLAGS: -Wl,-undefined,dynamic_lookup
 // #include <ruby.h>
 import "C"
 import (
