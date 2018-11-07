@@ -1,0 +1,7 @@
+AllCops:
+  Exclude:
+    - 'tmp/**/*'
+
+Style/GlobalVars:  
+  Exclude:
+    - ext/reverse/extconf.rb

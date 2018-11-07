@@ -1,13 +1,13 @@
 Gem::Specification.new do |s|
-  s.name    = "reverse"
-  s.version = "0.0.1"
-  s.summary = "Reverse with C and Go!!!!"
-  s.author  = "Andrew Stucki"
+  s.name    = 'reverse'
+  s.version = '0.0.1'
+  s.summary = 'Reverse with C and Go!!!!'
+  s.author  = 'Andrew Stucki'
 
-  s.files = Dir.glob("ext/**/*.{c,rb,go}") +
-            Dir.glob("lib/**/*.rb")
+  s.files = Dir.glob('ext/**/*.{c,rb,go}') +
+            Dir.glob('lib/**/*.rb')
 
-  s.extensions << "ext/reverse/extconf.rb"
+  s.extensions << 'ext/reverse/extconf.rb'
 
-  s.add_development_dependency "rake-compiler"
+  s.add_development_dependency 'rake-compiler'
 end

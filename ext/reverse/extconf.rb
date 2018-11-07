@@ -3,9 +3,9 @@ require 'mkmf'
 LIBDIR     = RbConfig::CONFIG['libdir']
 INCLUDEDIR = RbConfig::CONFIG['includedir']
 
-local = File.expand_path(File.join(File.dirname(__FILE__), "lib"))
-HEADER_DIRS = [INCLUDEDIR, local]
-LIB_DIRS = [LIBDIR, local]
+local = File.expand_path(File.join(File.dirname(__FILE__), 'lib'))
+HEADER_DIRS = [INCLUDEDIR, local].freeze
+LIB_DIRS = [LIBDIR, local].freeze
 libs = ['-lreverse']
 
 extension_name = 'reverse'
