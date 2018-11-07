@@ -19,7 +19,7 @@ func go_reverse(val C.VALUE) C.VALUE {
 	valLengthInt := int(valLength)
 
 	var elements []C.VALUE
-	sliceHeader := (*reflect.SliceHeader)((unsafe.Pointer(&elements)))
+	sliceHeader := (*reflect.SliceHeader)(unsafe.Pointer(&elements))
 	sliceHeader.Cap = valLengthInt
 	sliceHeader.Len = valLengthInt
 	sliceHeader.Data = uintptr(unsafe.Pointer(C.rb_array_const_ptr(val)))
