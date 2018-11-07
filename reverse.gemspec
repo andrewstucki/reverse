@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.summary = "Reverse with C and Go!!!!"
   s.author  = "Andrew Stucki"
 
-  s.files = Dir.glob("ext/**/*.{c,rb}") +
+  s.files = Dir.glob("ext/**/*.{c,rb,go}") +
             Dir.glob("lib/**/*.rb")
 
   s.extensions << "ext/reverse/extconf.rb"
